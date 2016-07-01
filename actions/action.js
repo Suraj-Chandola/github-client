@@ -5,14 +5,14 @@ export function fetchUser(user) {
 	return function(dispatch) {
 		console.log(user);
 		return fetch(`https://api.github.com/users/${user}/repos`).then(res => res.json()).then(data => dispatch(addUser(data)))
-                 .catch(err => dispatch(addError(err)));
+                 .catch(err => {console.log(err);dispatch(addError(err))});
 	}
 }
 
 export const fetchRepo= (repo)=> {
 	return dispatch => {
 		console.log(repo);
-    return fetch(`https://api.github.com/repos/`+repo)	
+    return fetch(`https://api.github.com/repos/`+repo)
       .then(response => response.json())
       .then(json => dispatch(addRepo(json))).catch(err => dispatch(addError(err)));
   }
@@ -62,8 +62,3 @@ export function addError() {
     type:actionType.SHOW_ERROR,
   }
 }
-
-
-
-
-

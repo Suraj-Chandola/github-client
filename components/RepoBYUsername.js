@@ -9,7 +9,7 @@ class RepoByUsername extends Component{
 
 	render() {
 	var repos = this.props.user.map((repo) => <RepoLink repo={repo} dispatch={this.props.dispatch} />);
-	   return <div>{this.props.user.length?<div><h3>Repositories Name</h3>{repos}</div>: null}</div>;
+	   return <div>{this.props.user.length?<div> <img src={this.props.user[0].owner.avatar_url} width='40px' height='40px'/><h3>Repositories Name</h3>{repos}</div>: null}</div>;
 	}
 	}
 export default RepoByUsername;
