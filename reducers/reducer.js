@@ -5,25 +5,13 @@ const initialState={
 	repo:{
   "id": 58881349,
   "name": "",
-  "full_name": "mayankchd/intersectionObserverAPI",
+  "full_name": "",
   "owner": {
-    "login": "mayankchd",
+    "login": "",
     "id": 5843024,
     "avatar_url": "",
     "gravatar_id": "",
-    "url": "https://api.github.com/users/mayankchd",
-    "html_url": "https://github.com/mayankchd",
-    "followers_url": "https://api.github.com/users/mayankchd/followers",
-    "following_url": "https://api.github.com/users/mayankchd/following{/other_user}",
-    "gists_url": "https://api.github.com/users/mayankchd/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/mayankchd/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/mayankchd/subscriptions",
-    "organizations_url": "https://api.github.com/users/mayankchd/orgs",
-    "repos_url": "https://api.github.com/users/mayankchd/repos",
-    "events_url": "https://api.github.com/users/mayankchd/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/mayankchd/received_events",
-    "type": "User",
-    "site_admin": false
+ 
   }
 },
  searchBy:"",
